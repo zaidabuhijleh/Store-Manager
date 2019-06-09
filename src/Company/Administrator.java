@@ -15,8 +15,8 @@ public class Administrator extends Staff {
         Scanner scan = new Scanner(System.in);
 
         int choice = 0;
-        while (choice != 4) {
-            System.out.println("----- Admin Options -----");
+        while (choice != 7) {
+            System.out.println("----- Admin Menu -----");
             System.out.print("");
             System.out.println("User: "+ this.name);
             System.out.println("1. Add Admin.");
@@ -25,7 +25,7 @@ public class Administrator extends Staff {
             System.out.println("4. Remove Employee.");
             System.out.println("5. View List of Employees.");
             System.out.println("6. Manage Store.");
-            System.out.println("7. Quit.");
+            System.out.println("7. Logout.");
 
             System.out.println("Choose an option: ");
             choice = scan.nextInt();
@@ -52,9 +52,11 @@ public class Administrator extends Staff {
                     break;
                 case 7:
                     System.out.println("Goodbye!");
+                    break;
 
                 default:
                     System.out.println("Enter number between 1 and 3.");
+                    break;
             }
         }
     }
@@ -70,7 +72,7 @@ public class Administrator extends Staff {
             System.out.println("1. Add item.");
             System.out.println("2. Remove item.");
             System.out.println("3. Check Store Stock.");
-            System.out.println("4. Quit.");
+            System.out.println("4. Return.");
 
             System.out.println("Choose an option: ");
             choice = scan.nextInt();
@@ -95,20 +97,3 @@ public class Administrator extends Staff {
         }
     }
 }
-
-//    public void addAdmin()
-//    {
-//        Scanner scan = new Scanner(System.in);
-//        scan.nextLine();
-//        System.out.println("Enter administrator name: ");
-//        String name = scan.nextLine();
-//        System.out.println("Enter administrator id number: ");
-//        int id = scan.nextInt();
-//        System.out.println("Enter username: ");
-//        String uName = scan.nextLine();
-//        System.out.println("Enter password: ");
-//        String pWord = scan.nextLine();
-//
-//        store.addAdmin(name, id, uName, pWord);
-//    }
-
